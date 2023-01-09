@@ -14,7 +14,7 @@
             "prettier --write ."
         ]
     },
-    "author": "sai",
+    "author": "sanjan",
     "license": "ISC",
     "devDependencies": {
         "cheerio": "^1.0.0-rc.12",
