@@ -42,7 +42,7 @@ describe("Test case for database", () => {
     const response = await agent.post("/users").send({
       firstName: "sanjan",
       lastName: "pallerla",
-      email: "sanjan.pallerla@gmail.com",
+      email: "sanja.pallerla@gmail.com",
       password: "sanjan",
       _csrf: csrfToken,
     });
@@ -219,7 +219,7 @@ describe("Test case for database", () => {
 
     await agent.get("/signout");
 
-    await login(agent, "sanjan.pallerla@gmail.com", "sanjan");
+    await login(agent, "sanjan@gmail.com", "sanjan");
 
     res = await agent.get("/todos");
     csrfToken = getCsrfToken(res);
